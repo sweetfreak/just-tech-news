@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Post extends Model {
-    
+
 }
 
 //create our POST model
@@ -15,7 +15,7 @@ Post.init(
             autoIncrement: true
         },
         title: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false
         },
         post_url: {
